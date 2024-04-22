@@ -11,12 +11,17 @@ P {
 /*
 h1 {
     color: rgb(24, 31, 121);
-    font-family: 'noto sans korean', sans-serif;
-    font-size: 250 px;
+    font-family: sans-serif;
+    font-size: 500 px;
     font-weight: bold;
 }
 */
 
+p {
+    font-size: 20px; 
+    font-weight: bold;
+    color: blue;
+}
 h2 {
     color: rgb(85, 110, 134);
 }
@@ -41,7 +46,6 @@ h2.custom-align {
 #name {
     text-align: center;
     color: rgb(24, 31, 121);
-    font-family: 'noto sans korean', sans-serif;
     font-family:"Dancing Script", cursive;
     font-size:large;
     font-weight:400;
@@ -62,14 +66,16 @@ h2.custom-align {
 .img-container {
     width: 150px;
     height: 200px;
-    border-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+   
+    
     border: 15px solid;
     overflow: hidden;
     border-style: groove;
     position: relative; 
     border-radius: 50%;
+    border: gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
-/*.img-container:before {
+.img-container:before {
     content: "";  
     position: absolute; 
     top: 0;
@@ -78,10 +84,11 @@ h2.custom-align {
     height: 100%;
     border: 5px solid black; 
     border-radius: 50%;
-    box-sizing: border-box; /* Include border width and height in the element's total width and height 
-    z-index: 0;  Ensure the border stays below the image */ 
+    box-sizing: border-box; 
     
 }
+
+
 #experience li {
     display:flexbox;
     background-color: #678f7e;
@@ -90,6 +97,7 @@ h2.custom-align {
     margin: 5px;
     border-radius: 5px;
 }
+
 
 #connect a {
     display:block;
@@ -104,4 +112,35 @@ h2.custom-align {
 
 #connect a:hover {
     background-color: #7ebccd;
+}
+
+nav {
+    
+    top: 0; 
+    width: 100%;
+    background-color: #47a7bf; 
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(241, 246, 247);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
