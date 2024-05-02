@@ -1,21 +1,24 @@
+/* Default styles for desktop */
+
 body {
     background-color: rgb(192, 195, 185);
     font-family: 'Roboto', sans-serif;
 }
+/*
 P {
-    font-size: 250 px;
+    font-size: 25020 px;
     font-weight: bold;
     color: blue;
 
-}
-/*
+}*/
+
 h1 {
-    color: rgb(24, 31, 121);
-    font-family: sans-serif;
-    font-size: 500 px;
+    color: rgb(142, 241, 28);
+    font-family: Arial;
+    font-size: 36 px;
     font-weight: bold;
 }
-*/
+
 
 p {
     font-size: 20px; 
@@ -87,7 +90,63 @@ h2.custom-align {
     box-sizing: border-box; 
     
 }
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    
 
+ /* Change font size and color for paragraphs */
+    p {
+        font-size: 18px;
+        color: green;
+    }
+
+    /* Adjust margin and padding for sections */
+    section {
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    /* Change background color for navigation */
+    nav {
+        background-color: #333;
+    }
+
+/*Mobile */
+@media screen and (max-width: 768px) {
+    
+
+    /* Change font size and color for headings */
+    h1, h2 {
+        font-size: 24px;
+        color: red;
+    }
+
+    /* Adjust padding and margin for list items */
+    #experience li {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    /* Example: Change background color for connect section */
+    #connect {
+        background-color: #ddd;
+    }
+}   
+
+/* Change font size and color for headings */
+h1, h2 {
+    font-size: 24px;
+    color: rgb(96, 143, 30);
+}
+ /* Adjust padding and margin for list items */
+ #experience li {
+    padding: 10px;
+    margin: 5px;
+}
+ /*Change background color for connect section */
+ #connect {
+    background-color: #ddd;
+}
 
 #experience li {
     display:flexbox;
@@ -144,3 +203,12 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
+}
+
+/* Stretch goal: Convert flexbox sections to grid 
+#experience, #connect {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}*/
