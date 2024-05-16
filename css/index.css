@@ -1,21 +1,14 @@
-/* Default styles for desktop */
+/* Default styles for mobile first */
 
 body {
     background-color: rgb(192, 195, 185);
     font-family: 'Roboto', sans-serif;
 }
-/*
-P {
-    font-size: 25020 px;
-    font-weight: bold;
-    color: blue;
-
-}*/
 
 h1 {
     color: rgb(142, 241, 28);
     font-family: Arial;
-    font-size: 36 px;
+    font-size: 24 px;
     font-weight: bold;
 }
 
@@ -27,14 +20,16 @@ p {
 }
 h2 {
     color: rgb(85, 110, 134);
+    font-size: 24px;
 }
 
 section {
-    padding: 3000 px;
+    padding: 10px;
+    margin-top: 50px;
 }
 
 section + section {
-    margin-top: 200 px;
+    margin-top: 50px;
 
 }
 h1.custom-align {
@@ -90,63 +85,6 @@ h2.custom-align {
     box-sizing: border-box; 
     
 }
-/* Tablet */
-@media screen and (max-width: 1024px) {
-    
-
- /* Change font size and color for paragraphs */
-    p {
-        font-size: 18px;
-        color: green;
-    }
-
-    /* Adjust margin and padding for sections */
-    section {
-        padding: 10px;
-        margin-top: 50px;
-    }
-
-    /* Change background color for navigation */
-    nav {
-        background-color: #333;
-    }
-
-/*Mobile */
-@media screen and (max-width: 768px) {
-    
-
-    /* Change font size and color for headings */
-    h1, h2 {
-        font-size: 24px;
-        color: red;
-    }
-
-    /* Adjust padding and margin for list items */
-    #experience li {
-        padding: 10px;
-        margin: 5px;
-    }
-
-    /* Example: Change background color for connect section */
-    #connect {
-        background-color: #ddd;
-    }
-}   
-
-/* Change font size and color for headings */
-h1, h2 {
-    font-size: 24px;
-    color: rgb(96, 143, 30);
-}
- /* Adjust padding and margin for list items */
- #experience li {
-    padding: 10px;
-    margin: 5px;
-}
- /*Change background color for connect section */
- #connect {
-    background-color: #ddd;
-}
 
 #experience li {
     display:flexbox;
@@ -156,8 +94,6 @@ h1, h2 {
     margin: 5px;
     border-radius: 5px;
 }
-
-
 #connect a {
     display:block;
     background-color: #b9cb74;
@@ -168,7 +104,6 @@ h1, h2 {
     color: #333;
     border-radius: 5px;
 }
-
 #connect a:hover {
     background-color: #7ebccd;
 }
@@ -180,7 +115,6 @@ nav {
     background-color: #47a7bf; 
     z-index: 1000; 
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -203,6 +137,55 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+        h1, h2{
+        font-size: 24px;
+        color: rgb(218, 128, 17);
+    }
+
+    
+    #experience li {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #connect {
+        background-color: #ddd;
+    }
+}
+
+/*desktop */
+@media screen and (min-width: 1024px) {
+    
+
+    /* Change font size and color for headings */
+    h1{
+        h1 {
+            font-size: 36px;
+            color: rgb(142, 241, 28);
+        }
+    
+        p {
+            font-size: 18px;
+            color: green;
+        }
+    
+        section {
+            padding: 3000px;
+            margin-top: 200px;
+        }
+    }
+
+
+
+
+
+
+
+
+
 }
 
 /* Stretch goal: Convert flexbox sections to grid 
