@@ -1,21 +1,19 @@
+/* Default styles for mobile first */
+
 body {
     background-color: rgb(192, 195, 185);
     font-family: 'Roboto', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-P {
-    font-size: 250 px;
-    font-weight: bold;
-    color: blue;
 
-}
-/*
 h1 {
-    color: rgb(24, 31, 121);
-    font-family: sans-serif;
-    font-size: 500 px;
+    color: rgb(142, 241, 28);
+    font-family: Arial;
+    font-size: 24 px;
     font-weight: bold;
 }
-*/
+
 
 p {
     font-size: 20px; 
@@ -24,14 +22,16 @@ p {
 }
 h2 {
     color: rgb(85, 110, 134);
+    font-size: 24px;
 }
 
 section {
-    padding: 3000 px;
+    padding: 10px;
+    margin-top: 50px;
 }
 
 section + section {
-    margin-top: 200 px;
+    margin-top: 50px;
 
 }
 h1.custom-align {
@@ -88,7 +88,6 @@ h2.custom-align {
     
 }
 
-
 #experience li {
     display:flexbox;
     background-color: #678f7e;
@@ -97,8 +96,6 @@ h2.custom-align {
     margin: 5px;
     border-radius: 5px;
 }
-
-
 #connect a {
     display:block;
     background-color: #b9cb74;
@@ -109,7 +106,6 @@ h2.custom-align {
     color: #333;
     border-radius: 5px;
 }
-
 #connect a:hover {
     background-color: #7ebccd;
 }
@@ -121,7 +117,6 @@ nav {
     background-color: #47a7bf; 
     z-index: 1000; 
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -144,3 +139,61 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+        h1, h2{
+        font-size: 24px;
+        color: rgb(218, 128, 17);
+    }
+
+    
+    #experience li {
+        padding: 10px;
+        margin: 6px;
+    }
+
+    #connect {
+        background-color: #ddd;
+    }
+}
+
+/*desktop */
+@media screen and (min-width: 1024px) {
+    
+
+    /* Change font size and color for headings */
+    h1{
+        h1 {
+            font-size: 36px;
+            color: rgb(142, 241, 28);
+        }
+    
+        p {
+            font-size: 18px;
+            color: green;
+        }
+    
+        section {
+            padding: 3000px;
+            margin-top: 200px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+}
+
+/* Stretch goal: Convert flexbox sections to grid 
+#experience, #connect {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}*/
