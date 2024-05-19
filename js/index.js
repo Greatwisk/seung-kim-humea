@@ -30,3 +30,4 @@ for(let i =0; i<skills.length;i++){
 }
 //console.log('Skills Section:', skillsSection);
 //console.log('Skills List:', skillsList);
+// edit 
