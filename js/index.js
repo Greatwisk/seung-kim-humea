@@ -4,7 +4,7 @@ const body = document.body
 const footer = document.createElement('footer') ;
 footer.textContent = '2024 Footer element added';
 body.appendChild(footer);
-console.log('Footer element added:', footer);
+console.log("Footer element added:", footer);
 
 // insert Copyright Text in Footer
 const today = new Date();
@@ -33,7 +33,7 @@ for(let i =0; i<skills.length;i++){
 //message handler form submit
 const messageForm = document.forms["leave message"];
 
-messageForm.addEventListener("submit", function(event){
+messageForm.addEventListener("submit", function (event) {
     event.preventDefault();
     
 //get values from the form fields
@@ -69,19 +69,21 @@ removeButton.type = "button";
 
 //add event listener tp the removeButton 
 removeButton.addEventListener("click", function() {
-    const entry = removeButton.parentNode;//
+    const entry = removeButton.parentNode;
     entry.parentNode.removeChild(entry);
   
 
-//append removeButton to the newMessage element 
-newMessage.appendChild(removeButton);
 
-messageList.appendChild(newMessage);
-})
 
 //reset method
 messageForm.reset();
 
 
 })
+
+//append removeButton to the newMessage element 
+newMessage.appendChild(removeButton);
+
+messageList.appendChild(newMessage);
+});
 
