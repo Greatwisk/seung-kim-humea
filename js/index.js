@@ -75,14 +75,12 @@ document.addEventListener("DOMContentLoaded", function(){
     //reset method
     messageForm.reset();
 
-
    })
-
   //Lesson-15 
 //Fetch Github Repositories 
  const githubUsername ="Greatwisk";
- const repositorySection = document.getElementById("repositories");
- const repositoryList = repositorySection.querySelector("ul");
+ const repositoryList = document.getElementById("repositories");
+ //const repositoryList = repositorySection.querySelector("ul");
 
  fetch(`https://api.github.com/users/${githubUsername}/repos`)
     .then (response => {
