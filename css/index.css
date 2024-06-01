@@ -4,16 +4,17 @@ nav{
     flex-direction: row;
     align-items: center;
     background-color: #47a7bf;
-    padding: 10 px 20px;
     padding: 10px 20px;
-    height: 60px; 
+    padding: 10px 20px;
+    min-height: 60px; 
 
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding:0;
-    display: flex;
+    display: none; /* changed from flex on 06/01*/
+    flex-direction: column;
     justify-content: space-between; 
     width: 100%;
 
@@ -24,6 +25,11 @@ nav ul {
 nav ul.active {
     display: flex; /* Show nav links when active */
 }
+
+.active{
+        display: flex;
+}/* added lines 28-30 on 06/01*/
+
 
 nav ul li {
     margin: 10px 0;
@@ -121,7 +127,7 @@ h2.custom-align {
     object-fit: cover;
     border-radius: 10px ;
     border-image: linear-gradient(to right, rgba(148, 186, 164, 0.5), rgba(151, 165, 170, 0.25), rgba(0, 0, 0, 0)) ; /* Apply gradient border
-    
+}
 
 /* Navigation links */
 .nav-links {
@@ -189,7 +195,7 @@ h1, h2{
         }
     
         section {
-            padding: 3000px;
+            padding: 300px;/* 06/01 change*/
             margin-top: 200px;
         }
     }
