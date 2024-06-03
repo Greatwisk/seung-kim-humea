@@ -11,8 +11,9 @@
 </head>
 
 <body>
+    <button class="hamburger">&#9776;</button>
     <nav>
-        <ul>
+        <ul class="nav-links"> <!-- 06/01 change-->
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li> <!-- Skills section -->
@@ -20,21 +21,21 @@
             <li><a href="#connect">Connect</a></li>
         </ul>
         
-
-
     </nav>
+    
     <section>
 
     <!--<h1 class="custom-align">Seung Kim</h1>-->
-    <h1 id= "name">Seung Kim</h1>
-    <div class="img-container"><img src="./img/IMG_3551.jpeg" alt="picture"
-    id= "picture"
-    >
+    <h1 id= "name"> 김승 or Seung Kim</h1>
+        <!--<div class+ "image-wrapper"></div> -->
+    <div class="img-container">
+            <img src="img/IMG_0580.jpeg" " alt="picture" id= "picture">
+        
     </div>
 
     <section id="about">
         <h2 class="custom-align">About:</h2>
-        <p>A new student at Code the Dream</p>
+        <p>Code the Dream is for dreamers! Goal is to create amazing projects in the future.</p>
     </section>
 
     <section id="experience">
@@ -96,7 +97,7 @@
     </section>
 </section>
 
-    
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <footer></footer>
     <script src = "js/index.js"></script>
     

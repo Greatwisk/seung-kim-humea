@@ -1,5 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
+      // Add the new code for hamburger menu
+   const hamburger = document.querySelector('.hamburger');
+   const navLinks = document.querySelector('.nav-links');
 
+   hamburger.addEventListener('click', function() {
+       navLinks.classList.toggle('active');
+   });
+
+   // added on 06/01/24 the lines 11-15 
+   window.addEventListener('resize', function() {
+    const displayStyle = window.getComputedStyle(navLinks).display;
+    if(window.innerWidth >=768 && displayStyle ==="block") {
+        navLinks.classList.remove("active")
+
+    }
+
+   })
     //Add a footer element 
     const body = document.body;
     const footer = document.createElement('footer') ;
@@ -28,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function(){
         skillItem.textContent = skills[i];
         skillsList.appendChild(skillItem);
     }
-//})
 
     //message handler form submit
     const messageForm = document.forms["leave message"];
@@ -127,6 +142,5 @@ document.addEventListener("DOMContentLoaded", function(){
     errorMessage.textContent = "Error Fetching repositories.";
     repositorySection.appendChild(errorMessage);
    });
-
+ 
 })
-//edit edit
